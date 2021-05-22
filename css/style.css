@@ -9,57 +9,90 @@ html {
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   text-align: center;
-  margin-left: 33%;
-  /* margin: 10%; */
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .grid-columns {
-  border: solid black;
+  /* border: solid black; */
 }
 .grid-rows {
+  /* border: solid black; */
+}
+body > h1.player1-time {
   border: solid black;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+body > h1.player2-time {
+  border: solid black;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  margin-left: 5%;
+  
 }
 .cell1{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell2{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell3{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell4{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell5{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell6{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell7{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell8{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
 }
 .cell9{
   background: lightpink;
   padding: 40%;
-  border: solid black;
+  border-radius: 50%;
+}
+.start-button {
+  position: fixed;
+  top:85%;
+  right: 50%;
+  height: 100px;
+  width: 300px;
+}
+.stop-button {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  height: 100px;
+  width: 300px;
 }
