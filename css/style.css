@@ -1,0 +1,65 @@
+html {
+  background: lightgrey;
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  text-align: center;
+  margin-left: 33%;
+  /* margin: 10%; */
+}
+.grid-columns {
+  border: solid black;
+}
+.grid-rows {
+  border: solid black;
+}
+.cell1{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell2{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell3{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell4{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell5{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell6{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell7{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell8{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
+.cell9{
+  background: lightpink;
+  padding: 40%;
+  border: solid black;
+}
