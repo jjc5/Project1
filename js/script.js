@@ -22,6 +22,10 @@ const toggleClass = (node, className) => {
 
 /* Event Listeners */
 playBtn.addEventListener('click', (e) =>{
-  // document.querySelector('div.cells').style.display = 'grid';
+  document.querySelector('body > div.controls > button.stop-button').style.visibility = 'visible';
+  document.querySelector('body > div.controls > button.start-button').style.visibility = 'visible';
+  document.querySelector('body > h1.player1-time').style.visibility = 'visible';
+  document.querySelector('body > h1.player2-time').style.visibility = 'visible';
+  document.querySelector('body > div.cells').style.visibility = 'visible';
   toggleClass(modal, 'open')
 })

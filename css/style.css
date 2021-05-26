@@ -3,6 +3,7 @@ html {
 }
 
 .cells {
+  visibility: hidden;
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 200px 200px;
@@ -22,6 +23,7 @@ html {
   /* border: solid black; */
 }
 body > h1.player1-time {
+  visibility: hidden;
   border: solid black;
   /* width: 400px;
   height: 100px; */
@@ -32,6 +34,7 @@ body > h1.player1-time {
   margin-top: 5%;
 }
 body > h1.player2-time {
+  visibility: hidden;
   border: solid black;
   /* width: 400px;
   height: 100px; */
@@ -86,6 +89,7 @@ body > h1.player2-time {
   border-radius: 50%;
 }
 .start-button {
+  visibility: hidden;
   position: fixed;
   top:85%;
   right: 50%;
@@ -93,6 +97,7 @@ body > h1.player2-time {
   width: 300px;
 }
 .stop-button {
+  visibility: hidden;
   position: fixed;
   top: 85%;
   left: 50%;
