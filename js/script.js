@@ -14,18 +14,27 @@ const cell7 = document.querySelector('body > div.cells > button.cell7');
 const cell8 = document.querySelector('body > div.cells > button.cell8');
 const cell9 = document.querySelector('body > div.cells > button.cell9');
 
+let seconds = document.getElementById("countdown").textContent;
+let countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
+/*basic countdown^^^*/
 
 /*Functions*/
 const toggleClass = (node, className) => {
   node.classList.toggle(className)
 }
 
+
 /* Event Listeners */
 playBtn.addEventListener('click', (e) =>{
   document.querySelector('body > div.controls > button.stop-button').style.visibility = 'visible';
   document.querySelector('body > div.controls > button.start-button').style.visibility = 'visible';
-  document.querySelector('body > h1.player1-time').style.visibility = 'visible';
-  document.querySelector('body > h1.player2-time').style.visibility = 'visible';
+  document.querySelector('body > h1.player1-score').style.visibility = 'visible';
+  document.querySelector('body > h1.player2-score').style.visibility = 'visible';
   document.querySelector('body > div.cells').style.visibility = 'visible';
+  document.querySelector('body > div#countdown').style.visibility = 'visible';
   toggleClass(modal, 'open')
 })

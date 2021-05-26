@@ -22,7 +22,7 @@ html {
 .grid-rows {
   /* border: solid black; */
 }
-body > h1.player1-time {
+body > h1.player1-score {
   visibility: hidden;
   border: solid black;
   /* width: 400px;
@@ -33,7 +33,7 @@ body > h1.player1-time {
   margin-left: 5%;
   margin-top: 5%;
 }
-body > h1.player2-time {
+body > h1.player2-score {
   visibility: hidden;
   border: solid black;
   /* width: 400px;
@@ -121,4 +121,7 @@ body > div.modal {
 }
 body > div.modal.open {
   visibility: visible;
+}
+body > div#countdown {
+  visibility: hidden;
 }
