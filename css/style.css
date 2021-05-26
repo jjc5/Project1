@@ -13,6 +13,7 @@ html {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
+  border: solid red;
 }
 .grid-columns {
   /* border: solid black; */
@@ -22,20 +23,22 @@ html {
 }
 body > h1.player1-time {
   border: solid black;
-  width: 400px;
-  height: 100px;
+  /* width: 400px;
+  height: 100px; */
+  width: 20vw;
+  height: 5vw;
   text-align: center;
   margin-left: 5%;
   margin-top: 5%;
-
 }
 body > h1.player2-time {
   border: solid black;
-  width: 400px;
-  height: 100px;
+  /* width: 400px;
+  height: 100px; */
+  width: 20vw;
+  height: 5vw;
   text-align: center;
   margin-left: 5%;
-  
 }
 .cell1{
   background: lightpink;
@@ -95,4 +98,22 @@ body > h1.player2-time {
   left: 50%;
   height: 100px;
   width: 300px;
+}
+body > div.modal {
+  visibility: hidden;
+  border: solid black;
+  width: 50vw;
+  max-width: 700px;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: blue;
+  justify-content: center;
+}
+body > div.modal.open {
+  visibility: visible;
 }
