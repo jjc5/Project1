@@ -125,3 +125,6 @@ body > div.modal.open {
 body > div#countdown {
   visibility: hidden;
 }
+#countdown{
+  font-size: 50px;
+}
