@@ -13,8 +13,35 @@ const cell6 = document.querySelector('body > div.cells > button.cell6');
 const cell7 = document.querySelector('body > div.cells > button.cell7');
 const cell8 = document.querySelector('body > div.cells > button.cell8');
 const cell9 = document.querySelector('body > div.cells > button.cell9');
-
+let allCells = document.querySelectorAll('body > div.cells > button.cellBtn');
 let seconds = document.getElementById("countdown").textContent;
+let cellArray = [cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9];
+let randomCell = cellArray[Math.floor(Math.random() * cellArray.length)];
+console.log(allCells)
+const style = getComputedStyle(cell1);
+const cell1Background = style.backgroundColor;
+const player1Score = [];
+const player2Score = [];
+
+
+
+
+
+
+
+/*FUNCTIONS*/
+const toggleClass = (node, className) => {
+  node.classList.toggle(className)
+}
+/*^^^toggles the modal class 'open'*/
+
+function randomCellBg(e){
+    randomCell.style.backgroundColor = 'rgb(144, 200, 252)';
+}
+
+/*^^^chnages background of random cell*/
+
+
 let countdown = function countdown(e){
   e.preventDefault();
   const interval = setInterval(function () {
@@ -25,28 +52,8 @@ let countdown = function countdown(e){
       document.getElementById('countdown').innerHTML = '5';
     }
   }, 1000);
-
-
 }
-
-
-
-// let seconds = document.getElementById("countdown").textContent;
-// let countdown = function startCountdown(){
-//   setInterval(function() {
-//       seconds--;
-//       document.getElementById("countdown").textContent = seconds;
-//       // if (seconds <= 0) clearInterval(countdown);
-//   }, 1000);
-// }
-
 /*basic countdown^^^*/
-
-/*Functions*/
-const toggleClass = (node, className) => {
-  node.classList.toggle(className)
-}
-
 
 /* Event Listeners */
 playBtn.addEventListener('click', (e) =>{
@@ -57,8 +64,19 @@ playBtn.addEventListener('click', (e) =>{
   document.querySelector('body > div.cells').style.visibility = 'visible';
   document.querySelector('body > div#countdown').style.visibility = 'visible';
   toggleClass(modal, 'open')
-})
-startBtn.addEventListener('click', countdown);
+});
+startBtn.addEventListener('click', (e)=>{
+  countdown(e);
+  randomCellBg(e);
+});
 
+cell1.addEventListener('click', (e) =>{
+  if(cell1Background === 'rgb(255, 182, 193)'){
+     randomCellBg(e);
+  }
+});
+
+console.log(cell1Background)
+console.log('hello')
 /*call functions*/
 // resetCountdown();

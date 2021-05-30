@@ -116,7 +116,7 @@ body > div.modal {
   margin: 0 auto;
   transform: translateY(-50%);
   text-align: center;
-  background-color: blue;
+  background-color: #fad97d;
   justify-content: center;
 }
 body > div.modal.open {
