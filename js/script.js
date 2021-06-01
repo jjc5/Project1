@@ -21,7 +21,7 @@ let randomCell = cellArray[Math.floor(Math.random() * cellArray.length)];
 class React {
   constructor(name, score){
     this.name = name;
-    this.score = 2;
+    this.score = 0;
     // this.highscore = highscore;
   }
   addScore(){
@@ -34,6 +34,7 @@ class React {
 const player1 = new React('player1');
 const player2 = new React('player2');
 console.log(player1.score);
+console.log(document.querySelector('body > div.cells > button.cell1').background);
 
 
 
@@ -106,7 +107,7 @@ let countdown = function countdown(e){
 
 /* Event Listeners */
 playBtn.addEventListener('click', (e) =>{
-  document.querySelector('body > div.controls > button.stop-button').style.visibility = 'visible';
+  // document.querySelector('body > div.controls > button.stop-button').style.visibility = 'visible';
   document.querySelector('body > div.controls > button.start-button').style.visibility = 'visible';
   document.querySelector('body > div.scores > div.player1-score').style.visibility = 'visible';
   document.querySelector('body > div.scores > div.player2-score').style.visibility = 'visible';
@@ -122,12 +123,16 @@ startBtn.addEventListener('click', (e) =>{
 // stopBtn.addEventListener('click', (e) =>{
 //   document.querySelector('body > div.cells > button.openBtn').style.visibility='hidden';
 // });
-
+// randomCell.addEventListener('click', (e){
+//   updateStatsOnDom('.player1-score > span', player1);
+//   addClicksP1();
+// });
 
  cell1.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
    updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
 
    // addClicksP1();
 
@@ -135,34 +140,50 @@ startBtn.addEventListener('click', (e) =>{
  cell2.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell3.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell4.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell5.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell6.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell7.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell8.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
  cell9.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+   addClicksP1();
  });
 
 
