@@ -1,5 +1,5 @@
 html {
-  background: lightgrey;
+  background: grey;
 }
 
 .cells {
@@ -22,68 +22,138 @@ html {
 .grid-rows {
   /* border: solid black; */
 }
-body > h1.player1-score {
+body > div.scores > div.player1-score {
   visibility: hidden;
   border: solid black;
   /* width: 400px;
   height: 100px; */
   width: 20vw;
   height: 5vw;
+  font-size: 50px;
   text-align: center;
   margin-left: 5%;
   margin-top: 5%;
 }
-body > h1.player2-score {
+body > div.scores > div.player2-score {
   visibility: hidden;
   border: solid black;
   /* width: 400px;
   height: 100px; */
   width: 20vw;
   height: 5vw;
+  font-size: 50px;
   text-align: center;
   margin-left: 5%;
 }
-.cell1{
+button.openBtn {
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell2{
+body > div.cells > button.cell1{
+  visibility: visible;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell3{
+body > div.cells > button.cell1.openBtn{
+  visibility: hidden;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell4{
+body > div.cells > button.cell2{
+  visibility: visible;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell5{
+body > div.cells > button.cell2.openBtn{
+  visibility: hidden;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell6{
+body > div.cells > button.cell3{
+  visibility: visible;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell7{
+body > div.cells > button.cell3.openBtn{
+  visibility: hidden;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell8{
+body > div.cells > button.cell4{
+  visibility: visible;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
 }
-.cell9{
+body > div.cells > button.cell4.openBtn{
+  visibility: hidden;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell5{
+  visibility: visible;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell5.openBtn{
+  visibility: hidden;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell6{
+  visibility: visible;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell6.openBtn{
+  visibility: hidden;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell7{
+  visibility: visible;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell7.openBtn{
+  visibility: hidden;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell8{
+  visibility: visible;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell8.openBtn{
+  visibility: hidden;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell9{
+  visibility: visible;
+  background: lightpink;
+  padding: 40%;
+  border-radius: 50%;
+}
+body > div.cells > button.cell9.openBtn{
+  visibility: hidden;
   background: lightpink;
   padding: 40%;
   border-radius: 50%;
