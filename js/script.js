@@ -19,31 +19,28 @@ let cellArray = [cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9];
 let randomCell = cellArray[Math.floor(Math.random() * cellArray.length)];
 
 class React {
-  constructor(name, score, highscore){
+  constructor(name, score){
     this.name = name;
-    this.score = score;
-    this.highscore = highscore;
+    this.score = 2;
+    // this.highscore = highscore;
   }
   addScore(){
     this.score++;
-    this.updateStatsOnDom();
+    // this.updateStatsOnDom();
   }
-  updateStatsOnDom(){
-    const container = document.querySelector('.scores');
-    container.innerHTML = `
-    <div class='player1-score'>
-      <span>${this.score}</span>
-    </div>
-    <div class='player2-score'>
-      <span>${this.score}</span>
-    </div>
-    `
-  }
-}
-const player1 = new React('player1', 0, 0);
-const player2 = new React('player2', 0, 0);
-console.log(player1.score)
 
+
+}
+const player1 = new React('player1');
+const player2 = new React('player2');
+console.log(player1.score);
+
+
+
+const updateStatsOnDom = (domClass, playerInstance) => {
+  const domNode = document.querySelector(domClass)
+  domNode.innerHTML = playerInstance.score
+}
 
 
 
@@ -55,8 +52,14 @@ const toggleClass = (node, className) => {
   node.classList.toggle(className)
 }
 /*^^^toggles the modal class 'open'*/
-const addClicksP1 = () => player1.addScore();
-const addClicksP2 = () => player2.addScore();
+const addClicksP1 = function addClicksP1(){
+  player1.addScore();
+
+}
+const addClicksP2 = function addClicksP2(){
+  player2.addScore();
+
+}
 
 const randomCellOg = function randomCellOg(){
   let cellArray = [cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9];
@@ -89,7 +92,7 @@ const countClick = function countClick(){
 }
 
 let countdown = function countdown(e){
-  e.preventDefault();
+
   const interval = setInterval(function () {
     seconds--;
     document.getElementById("countdown").textContent = seconds;
@@ -112,19 +115,22 @@ playBtn.addEventListener('click', (e) =>{
   toggleClass(modal, 'open')
 });
 startBtn.addEventListener('click', (e) =>{
-  // countdown(e);
-
+  countdown();
   toggleClass(randomCell, 'openBtn');
-
   randomCellBg();
 });
-// randomCell.addEventListener('click', (e)=>{
-//   toggleClass(randomCell, 'openBtn');
-//
+// stopBtn.addEventListener('click', (e) =>{
+//   document.querySelector('body > div.cells > button.openBtn').style.visibility='hidden';
 // });
+
+
  cell1.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
    randomCellBg();
+   updateStatsOnDom('.player1-score > span', player1);
+
+   // addClicksP1();
+
  });
  cell2.addEventListener('click', (e) =>{
    toggleClass(randomCell, 'openBtn');
